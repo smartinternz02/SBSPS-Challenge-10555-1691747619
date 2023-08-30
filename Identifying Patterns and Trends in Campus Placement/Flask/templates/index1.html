@@ -1,0 +1,126 @@
+
+
+<html>
+<head>
+<title>
+	Prediction
+</title>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<style>
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			font-family: 'Montserrat' ;
+		}
+		
+		.header {	
+			top:0;	
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color: black;
+			color: white;
+			box-shadow: 0px 8px 4px grey;
+			overflow: hidden;
+			padding: 15px;
+			font-size: 2vw;
+			width: 100%;
+			text-align: left;
+			padding-left: 100px;
+			opacity:0.9;
+		}
+		.header_text{
+			font-size:40px;
+			text-align:center;
+		}
+		.content{
+		margin-top:100px;
+		}
+		.text{
+			font-size:15px;
+			margin-top:10px;
+			text-align:centre;
+		}
+		.text123{
+			font-size:20px;
+			margin-top:10px;
+			text-align:centre;
+		}
+		
+		input[type=number], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #000000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #5d6568;
+  color:#ffffff;	
+  border-color:black;
+}
+form{
+margin-top:20px;
+}
+.result{
+color:black;
+margin-top:30px;
+margin-bottom:20px;
+font-size:50px;
+color:red;
+}
+
+</style>	
+</head>
+<body align=center>
+<div class="header">
+		<div>PREDICTION</div>
+</div>
+<div class="content">
+<div class="header_text">Predicting placement of Student</div>
+
+<div class="text123">Fill in all the below details</div>
+
+<div class="result">
+
+
+<form action="/guest" method="POST">
+
+	
+	<input type="number" id="sen1" name="sen1" placeholder="Age">
+    <input type="number" id="sen2" name="sen2" placeholder="Gender M(0),F(0)">
+    <input type="number" id="sen3" name="sen3" placeholder="Stream CS(0),IT(1),ECE(2),Mech(3),EEE(4),Civil(5)">
+	<input type="number" id="sen4" name="sen4" placeholder="Internships">
+    <input type="number" id="sen5" name="sen5" placeholder="CGPA">
+    <input type="number" id="sen6" name="sen6" placeholder="Number of backlogs">
+	
+    
+    
+    <input type="submit" value="Submit">
+
+  </form>
+  
+    {{y}}
+   </div>
+   <div class="text123">1 : Placed</div>
+     <div class="text123">0 : Notplaced</div>
+</div>
+</body>
+</html>
